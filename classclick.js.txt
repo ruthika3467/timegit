@@ -1,0 +1,28 @@
+import ClassClick from './demo/ClassClick';
+function App() {
+  return(
+    <div className="App">
+      <ClassClick></ClassClick>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+import React, { Component } from 'react'
+
+class ClassClick extends Component {
+    clickHandler(){
+        console.log('clicked the button')
+    }
+    render() {
+        return ( 
+            <div>
+                <button onClick={this.clickHandler}>clicked</button>
+            </div>
+        )
+    }
+    }
+    export default ClassClick
